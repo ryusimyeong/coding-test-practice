@@ -7,6 +7,8 @@
 
 두 인접한 데이터를 비교해서 앞에 있는 데이터가 뒤에 있는 데이터보다 크면 자리를 바꾸는 정렬.
 
+<img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Bubble-sort-example-300px.gif" width=600/>
+
 > 예시: https://visualgo.net/en/sorting
 
 #### 구현
