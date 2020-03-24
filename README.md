@@ -3,9 +3,36 @@
 
 > 패스트캠퍼스 코딩테스트 인터넷 강의를 참고했습니다.
 
+시간 복잡도는 Big O 표기법 기준으로 표기합니다.
+
 ## 알고리즘
 
-### 버블정렬
+### 00. 기본 정렬
+
+> https://visualgo.net/en/sorting
+
+#### 구현
+```js
+const basicSort = array => {
+  for (let i = 0; i < array.length - 1; i++) {
+    for (let j = i + 1; j < array.length; j++) {
+      if (array[i] > array[j]) {
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+    }
+  }
+  return array;
+};
+
+const array = [23, 456, 123, 567, 34, 13, 67, 2345];
+console.log(basicSort(array));
+```
+
+#### 시간복잡도
+
+반복문 두개. n의 2제곱.
+
+### 01. 버블정렬
 
 두 인접한 데이터를 비교해서 앞에 있는 데이터가 뒤에 있는 데이터보다 크면 자리를 바꾸는 정렬.
 
@@ -43,3 +70,4 @@ console.log(bubblesort(array));
 
 #### 시간복잡도
 반복문 두 개. n의 2제곱.
+
