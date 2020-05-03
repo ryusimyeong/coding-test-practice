@@ -33,9 +33,10 @@ const solution = s => {
 
     for (let i = 0; i < arr.length; i++) {
         const letters = arr[i].split("");
-        letters[0] = letters[0] === undefined
-            ? letters[0]
-            : letters[0].toUpperCase();
+
+        if (letters[0] !== undefined) {
+          letters[0] = letters[0].toUpperCase();
+        }
 
         temp.push(letters.join(""));
     }
